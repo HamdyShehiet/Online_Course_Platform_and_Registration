@@ -13,3 +13,13 @@
   --gainsboro:#DBDBDB;
   --cornflowerblue:#2D8DD5;
 }
+html{
+  font-size: 62.5%;
+}
+img{
+  max-width: 100%;
+}
+body{
+  background-color:var(--white);
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    /* font-family: "Poppins", serif;
+    font-family: "Roboto", serif; */
+}
+:root{
+--black:#000000;
+--white:#FFFFFF;
+--gainsboro:#DBDBDB;
+--cornflowerblue:#2D8DD5;
+}
+html{
+font-size: 62.5%;
+}
+img{
+max-width: 100%;
+}
+body{
+background-color:var(--white);
+scroll-behavior: smooth;
+}
