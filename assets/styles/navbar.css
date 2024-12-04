@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
-    /* font-family: "Poppins", serif;
-    font-family: "Roboto", serif; */
+    box-sizing: border-box;
+    /*
+    font-family: "Poppins", serif;
+    
+    font-family: "Roboto", serif;
+    */
 }
 :root{
 --black:#000000;
@@ -23,12 +24,14 @@ body{
 background-color:var(--white);
 scroll-behavior: smooth;
 }
-/* .container{
+.container{
     padding: 0 2rem;
     margin: auto;
 }
 
 header{
+    position: sticky;
+    top: 0;
     padding: 2rem 0;
     background-color: var(--white);
 }
@@ -36,12 +39,46 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    
 }
 header .container .logo{
     display: inline-flex;
     align-items: center;
-    gap: 2rem;
-} */
+    gap: 1.5rem;
+}
+header .container a{
+    font-family: "Roboto", serif; 
+    font-size: clamp(2rem,2.5vw,2.8rem);
+    font-weight: 500;
+    color: var(--black);
+}
+header .container nav ul{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+}
+header .container nav ul a{
+    display: inline-block;
+    font-family: "Roboto", serif; 
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--black);
+    text-decoration: none;
+}
+header .container nav ul li .search-box{
+    display: inline-flex;
+    align-items: center;
+    padding: .8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+header .container nav ul li .search-box input{
+    outline: none;
+    border: none;
+}
+header .container nav ul li .search-box input::placeholder{
+    font-family: "Roboto", serif; 
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
