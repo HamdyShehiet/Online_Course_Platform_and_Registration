@@ -79,6 +79,40 @@ body{
 .banner .container img{
   width: 100%;
 }
+
+.features{
+  padding: 2rem 0 8rem 0;
+}
+.features .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+  gap: 4.5rem;
+}
+.features .container .feature{
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 5.4rem 2.9rem;
+  background-color: var(--gainsboro);
+  color: var(--black);
+  font-family: var(--roboto-font);
+  border-radius: 50px;
+}
+.features .container .feature img{
+  width: 6.6rem;
+  height: auto;
+}
+.features .container .feature span{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.features .container .feature p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 150%;
+} 
 @media (max-width:48em) {
   .hero .container .more-links a{
     font-size: 1.5rem;
