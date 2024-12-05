@@ -26,6 +26,11 @@ body{
   margin: auto;
   overflow: hidden;
 }
+@media (min-width: 1400px) {
+  .container{
+      max-width: 1320px;
+  }
+}
 .hero{
   background: url(../images/hero.webp) no-repeat center/cover;
 }
@@ -60,6 +65,19 @@ body{
   color: var(--black);
   text-decoration: none;
   border-radius: 50px;
+}
+.banner{
+  padding: 4rem 0;
+}
+.banner .container .image-box{
+  max-width: 100rem;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.banner .container img{
+  width: 100%;
 }
 @media (max-width:48em) {
   .hero .container .more-links a{

@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*
-    font-family: "Poppins", serif;
-
-    font-family: "Roboto", serif;
-    */
 }
 :root{
 --roboto-font: "Roboto", serif;
@@ -31,6 +26,11 @@ background-color:var(--white);
     padding: 0 2rem;
     margin: auto;
     overflow: hidden;
+}
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1320px;
+    }
 }
 header{
     position: sticky;
