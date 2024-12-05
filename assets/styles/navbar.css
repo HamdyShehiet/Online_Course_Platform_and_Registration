@@ -54,6 +54,7 @@ header .container .logo a{
     font-size: clamp(1.8rem,2.5vw,2.8rem);
     font-weight: 500;
     color: var(--black);
+    text-decoration: none;
 }
 header .container nav ul{
     display: flex;
