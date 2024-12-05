@@ -101,7 +101,6 @@ body{
 }
 .features .container .feature img{
   width: 6.6rem;
-  height: auto;
 }
 .features .container .feature span{
   text-align: center;
@@ -114,6 +113,28 @@ body{
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 150%;
+}
+.our-learners{
+  padding: 8rem 0;
+  /* background-color: #2D8DD5; */
+}
+.our-learners .container h2{
+  text-align: center;
+  font-family: var(--poppins);
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+.our-learners .container .image-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding: 0 2rem;
+}
+.our-learners .container .image-box img{
+  width:28rem;
 }
 @media (max-width:62em) {
   .features .container{
