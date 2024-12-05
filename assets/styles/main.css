@@ -93,7 +93,7 @@ body{
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 5.4rem 2.9rem;
+  padding: 4rem 1rem;
   background-color: var(--gainsboro);
   color: var(--black);
   font-family: var(--roboto-font);
