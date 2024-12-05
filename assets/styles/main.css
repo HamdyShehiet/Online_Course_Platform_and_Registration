@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*
-    font-family: "Poppins", serif;
-    font-family: "Roboto", serif;
-    */
-}
+  }
 :root{
+  --roboto-font: "Roboto", serif;
+  --poppins:  "Poppins", serif;
   --black:#000000;
   --white:#FFFFFF;
   --gainsboro:#DBDBDB;
@@ -15,11 +13,56 @@
 }
 html{
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 img{
   max-width: 100%;
 }
 body{
   background-color:var(--white);
-  scroll-behavior: smooth;
+}
+.container{
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+.hero{
+  background: url(../images/hero.webp) no-repeat center/cover;
+}
+.hero .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 2rem;
+  min-height: calc(100vh - 8rem);
+  padding:0 3rem 4rem 3rem;
+}
+.hero .container h1{
+  max-width: 53rem;
+  width: 100%;
+  font-family: var(--roboto-font);
+  font-size: clamp(3rem,5vw,4.5rem);
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--black);
+}
+.hero .container .more-links{
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.hero .container .more-links a{
+  padding:1rem 2rem;
+  font-family: var(--roboto-font);
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: var(--white);
+  color: var(--black);
+  text-decoration: none;
+  border-radius: 50px;
+}
+@media (max-width:48em) {
+  .hero .container .more-links a{
+    font-size: 1.5rem;
+  }
 }

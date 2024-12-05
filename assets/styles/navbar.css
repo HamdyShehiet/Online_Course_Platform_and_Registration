@@ -9,6 +9,8 @@
     */
 }
 :root{
+--roboto-font: "Roboto", serif;
+--poppins:  "Poppins", serif;
 --black:#000000;
 --white:#FFFFFF;
 --gainsboro:#DBDBDB;
@@ -28,13 +30,12 @@ background-color:var(--white);
 .container{
     padding: 0 2rem;
     margin: auto;
+    overflow: hidden;
 }
-
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
-    width: 100%;
     padding: 2rem 0;
     border: 1px solid var(--black);
     background-color: var(--white);
@@ -50,7 +51,7 @@ header .container .logo{
     gap: 1.2rem;
 }
 header .container .logo a{
-    font-family: "Roboto", serif; 
+    font-family: var(--roboto-font); 
     font-size: clamp(1.8rem,2.5vw,2.8rem);
     font-weight: 500;
     color: var(--black);
@@ -64,7 +65,7 @@ header .container nav ul{
 }
 header .container nav ul a{
     display: inline-block;
-    font-family: "Roboto", serif; 
+    font-family: var(--roboto-font); 
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--black);
@@ -86,7 +87,7 @@ header .container nav ul li .search-box input{
     background-color: transparent;
 }
 header .container nav ul li .search-box input::placeholder{
-    font-family: "Roboto", serif; 
+    font-family:var(--roboto-font); 
     font-size: 1.4rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
@@ -106,6 +107,7 @@ header .container nav > .checked{
         display: block;
     }
     header .container nav ul{
+        display: none;
         flex-direction: column;
         gap: 2rem;
         position: absolute;
@@ -118,6 +120,7 @@ header .container nav > .checked{
         transition: all .4s ease;
     }
     header .container nav > .checked:checked ~ ul{
+        display: flex;
         right: 0;
     }
     header .container nav ul .menu-search-box{
