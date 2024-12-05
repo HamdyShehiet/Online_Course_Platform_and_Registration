@@ -148,12 +148,13 @@ footer .footer-top .container{
 }
 footer .footer-top .container .categories{
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 5rem;
   flex-grow: 1;
 }
 footer .footer-top .container .categories .category {
+  flex-grow: 1;
   width: 15rem;
   text-align: center;
 }
