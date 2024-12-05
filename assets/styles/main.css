@@ -219,6 +219,27 @@ footer .footer-top .container .subscribe form input[type="submit"]{
   border-radius: 50px;
   background-color: var(--cornflowerblue);
 }
+.copyright{
+  padding: 4rem 0;
+}
+.copyright .container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.copyright .container p{
+  font-family: var(--roboto-font);
+  font-size: 1.8rem;
+  font-weight: 300;
+  
+}
+.copyright .container .icons{
+  display: inline-flex;
+  align-items: center;
+  gap: 3rem;
+}
 @media (max-width:62em) {
   .features .container{
     grid-template-columns: 1fr 1fr ;
@@ -230,5 +251,8 @@ footer .footer-top .container .subscribe form input[type="submit"]{
   }
   .features .container{
     grid-template-columns: 1fr ;
+  }
+  .copyright .container{
+    justify-content: center;
   }
 }
