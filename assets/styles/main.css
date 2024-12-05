@@ -85,8 +85,8 @@ body{
 }
 .features .container{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-  gap: 4.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.4rem;
 }
 .features .container .feature{
   display:flex ;
@@ -104,17 +104,27 @@ body{
   height: auto;
 }
 .features .container .feature span{
+  text-align: center;
   font-size: 2rem;
   font-weight: 500;
+  line-height: 150%;
 }
 .features .container .feature p{
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
-  text-align: center;
   line-height: 150%;
+}
+@media (max-width:62em) {
+  .features .container{
+    grid-template-columns: 1fr 1fr ;
+  }
 } 
 @media (max-width:48em) {
   .hero .container .more-links a{
     font-size: 1.5rem;
+  }
+  .features .container{
+    grid-template-columns: 1fr ;
   }
 }
