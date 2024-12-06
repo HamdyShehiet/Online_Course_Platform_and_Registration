@@ -89,3 +89,46 @@ header .container .search-filter input::placeholder{
   background-color: var(--black);
   color: var(--white);
 }
+.courses{
+  padding: 4rem 0;
+}
+.courses .container h2{
+  text-align: center;
+  font-family: var(--roboto-font);
+  font-size: 4rem;
+  font-weight: 700;
+}
+.courses .container .courses-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(34rem,1fr));
+  justify-content: center;
+  gap: 4rem;
+  max-width: 110rem;
+  width: 100%;
+  margin:2rem auto 0 auto;
+}
+.courses .container .course{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.courses .container .course img{
+  width: 100%;
+}
+.courses .container .course .details{
+  align-self: start;
+  margin: 1.3rem;
+}
+.courses .container .course .details h3{
+  font-family: var(--roboto-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.courses .container .course .details span{
+  font-family: var(--roboto-font);
+  font-size: 2rem;
+  font-weight: 500;
+}
