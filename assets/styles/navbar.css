@@ -50,6 +50,9 @@ header .container .logo{
     align-items: center;
     gap: 1.2rem;
 }
+header .container .logo img{
+    width: 3.8rem;
+}
 header .container .logo a{
     font-family: var(--roboto-font); 
     font-size: clamp(1.8rem,2.5vw,2.8rem);
