@@ -100,12 +100,13 @@ header .container .search-filter input::placeholder{
 }
 .courses .container .courses-list{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(34rem,1fr));
+  grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
   justify-content: center;
   gap: 4rem;
   max-width: 110rem;
   width: 100%;
-  margin:2rem auto 0 auto;
+  margin:3rem auto 0 auto;
+  background-color: #2D8DD5;
 }
 .courses .container .course{
   display: flex;
@@ -149,7 +150,7 @@ header .container .search-filter input::placeholder{
   gap: 4rem;
   max-width: 110rem;
   width: 100%;
-  margin:2rem auto 0 auto;
+  margin:3rem auto 0 auto;
 }
 .course-details .container .course-list .course{
   display: flex;
@@ -191,7 +192,7 @@ header .container .search-filter input::placeholder{
   gap: 2rem;
   max-width: 110rem;
   width: 100%;
-  margin:2rem auto 0 auto;
+  margin:3rem auto 0 auto;
 }
 .benefits .container .benefits-items .benefit{
   display: flex;
