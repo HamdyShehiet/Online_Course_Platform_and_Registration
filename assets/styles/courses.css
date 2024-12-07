@@ -114,6 +114,7 @@ header .container .search-filter input::placeholder{
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   overflow: hidden;
+  color: var(--black);
 }
 .courses .container .course img{
   width: 100%;
@@ -156,6 +157,7 @@ header .container .search-filter input::placeholder{
   padding: 1.6rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
+  color: var(--black);
 }
 .course-details .container .course-list .course img{
   border-radius: 6px;
